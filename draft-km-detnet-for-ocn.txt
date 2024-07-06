@@ -3,9 +3,11 @@
 
 
 Detnet Group                                                K. Makhijani
-Internet-Draft                                                     R. Li
-Intended status: Informational                               C. Westphal
-Expires: 7 January 2025                                        Futurewei
+Internet-Draft                                               Independent
+Intended status: Informational                                     R. Li
+Expires: 7 January 2025                             SouthEast University
+                                                             C. Westphal
+                                                               Futurewei
                                                             L. Contreras
                                                               Telefonica
                                                                T. Faisal
@@ -459,7 +461,7 @@ Table of Contents
    between enterprise sites and shop floors.  They have resources
    available to provide latency guarantees, reliability, and link
    capacity over known physical distances.  Thus, they have the
-   capabilites to deliver process control and operation instructions
+   capabilities to deliver process control and operation instructions
    remotely from an application to field devices over larger distances
    or the Wide Area Networks (WAN) thereby reducing the need for IT
    infrastructure on shop floors.
@@ -472,8 +474,8 @@ Table of Contents
    Slice services [RFC9543], and/or the selection of paths characterized
    by precision metrics [PCE-PAM] and [RFC9544].
 
-   The OCN APIs are defined to leverage such capabilites from diverse
-   variety of networks in uniform manner.  These APIS are discussed
+   The OCN APIs are defined to leverage such capabilities from diverse
+   variety of networks in a uniform manner.  These APIS are discussed
    next.
 
 4.  Operation & Control Traffic Types
@@ -662,7 +664,7 @@ Table of Contents
 
    API format:
 
-        +-- tt_code = CFDI_TT
+        +-- tt_code = NWCTL_TT
         +-- dl_time = value
         +-- dl_tmunit = sec
         +-- restrans = yes |no
@@ -684,8 +686,9 @@ Table of Contents
 
 7.  Acknowledgements
 
-   This work is supported by by the European Commission Horizon Europe
-   SNS JU project DESIRE6G (GA 101096466).
+   The contribution of L.M.  Contreras to this work has been partially
+   funded by the European Commission Horizon Europe SNS JU PREDICT-6G
+   (GA 101095890) and DESIRE6G (GA 101096466) projects.
 
 8.  References
 
@@ -863,13 +866,13 @@ A.2.  OCNO EH Processing
 Authors' Addresses
 
    Kiran Makhijani
-   Futurewei
+   Independent
    Email: kiran.ietf@gmail.com
 
 
    Richard Li
-   Futurewei
-   Email: richard.li@futurewei.com
+   SouthEast University
+   Email: richard.li.internet@gmail.com
 
 
    Cedric Westphal
