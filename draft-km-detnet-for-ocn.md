@@ -1,6 +1,6 @@
 ---
 abbrev: ocn-in-detnets
-docname: draft-km-detnet-for-ocn-latest
+docname: draft-km-detnet-for-ocn-04
 title: Using Deterministic Networks for Industrial Operations and Control
 date:  false
 category: info
