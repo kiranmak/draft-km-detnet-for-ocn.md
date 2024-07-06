@@ -50,13 +50,7 @@ informative:
 
 --- abstract
 
-Remote industrial processes enable control & operations from the
-software-defined application logic. In order to support process automation
-remotely, not only Deterministic Networks (DetNet) are needed but an interface
-between the application endpoints to the devices over a DetNet infrastructure
-is also required. This document describes an interface to deterministic
-networks from the view of endpoints to support process control and operations.
-
+This document describes an application programming interface with a deterministic network domain. The API is used to select (or map) services in the Deterministic Network architecture.
 --- middle
 
 # Introduction {#intro}
@@ -71,26 +65,20 @@ packet losses (among other things) is implied.
 
 The endpoints ('process controllers' and field devices) embody
 machine-to-machine communications to facilitate remote and local process
-automation. In this document, networks that support all the characteristics of
-remote process automation are referred to as Operation and Control Networks
-(OCNs) for convenience. This document describes using DetNet to enable OCN
-applications since they provide mechanisms for guaranteed delay-aware packet
-delivery, reliability, and packet loss mitigation.
+automation. Applications using deterministic networks are not aware of the
+details of such networks and, therefore, require an interface with DetNets for
+operations and control of field-devices. In this document such interfaces are
+referred to as Operation and Control Networks (OCNs) for convenience. 
+OCN interfaces are used by applications to describe reuirements for for
+guaranteed delay-aware packet delivery, reliability, and packet loss mitigation.
 
-This document defines the interface between an OCN application and the DetNet
-framework. i.e., using DetNet services for communication between the
-controllers and the field devices. This interface is used by an application to
-express its network-specific requirements. This document presents the
-perspective of an end system. Because general-purpose applications widely use
-IP network stack and provide more connection flexibility to end systems, the
-scope of our discussion is specific to the IP-enabled DetNet data planes
-{{!DETNET-DP=RFC8655}}. A proxy function is assumed for the other type of field
-devices and service levels (section 4.1 in RFC8655).
+Deterministic Networks provide extension to Time Sensitive Networks (TSN) for large-scale domains. To this end, TSN has specified IA profile in {https://www.ieee802.org/1/files/private/60802-drafts/d2/60802-d2-4.pdf}. 
 
-Mapping OCNs to DetNet helps better understand how DetNets can be used in such
-scenarios. The document provides a background on the type of traffic patterns
-in OCN applications. It proposes an interface between an application and DetNet
-and a potential solution direction to support OCN traffic patterns over DetNet.
+
+The document provides a background on the Industrial automation (section-),
+traffic classification and parameters (section-), as well as a potential IPv6
+extension header based approach.
+
 
 # Terminology
 
